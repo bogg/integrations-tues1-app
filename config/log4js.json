@@ -1,0 +1,17 @@
+{
+    "levels": {
+        "simple-app": "INFO",
+        "simple-app-log": "INFO"
+    },
+    "appenders": [
+        {
+            "type": "console",
+            "layout": {
+                "type": "pattern",
+                "pattern": "[%d] [%p] [%c] %m",
+                "tokens": {
+                }
+            }
+        }
+    ]
+}
