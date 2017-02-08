@@ -12,7 +12,7 @@
     "node": "4.6.x",
     "npm": "3.10.x"
   },
-  "name": "simple-app",
+  "name": "otc-simple-app",
   "scripts": {
     "start": "node index"
   },
