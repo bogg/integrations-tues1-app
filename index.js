@@ -16,7 +16,7 @@ var express = require("express"),
 	cookieParser = require("cookie-parser"),
 	bodyParser = require("body-parser"),
 	http = require('http'),
-	logController = require('./log');
+	echoController = require('otc-echo');
  
  var PORT = 3000;
  if (process.env.PORT) {
@@ -29,7 +29,7 @@ log4js.configure("./config/log4js.json", {
     reloadSecs: 30
 });
 
-var logger = log4js.getLogger("simple-app");
+var logger = log4js.getLogger("otc-simple-app");
 
 
 var app = express();
@@ -37,7 +37,12 @@ app.set('env', 'production');
 app
 	.use(cookieParser())
 	.use(bodyParser.json())
-	.use('/*', logController);
+	.use('/echo', echoController.echo)
+	.use('/echo-url', echoController.echourl)
+	.use('/echo-headers', echoController.echoheaders)
+	.use('/*', function (req, res) {
+	    res.sendStatus(403);
+	});
 
 var server = http.createServer(app);
 

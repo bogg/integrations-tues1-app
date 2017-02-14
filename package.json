@@ -5,7 +5,8 @@
     "cookie-parser": "^1.4.2",
     "express": "^4.13.4",
     "http": "0.0.0",
-    "log4js": "^0.6.36"
+    "log4js": "^0.6.36",
+    "otc-echo": "^1.0.1"
   },
   "devDependencies": {},
   "engines": {
@@ -16,7 +17,6 @@
   "scripts": {
     "start": "node index"
   },
-  "version": "1.0.1",
+  "version": "1.1.0",
   "optionalDependencies": {}
 }
-
