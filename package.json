@@ -6,7 +6,7 @@
 		"express": "^4.13.4",
 		"http": "0.0.0",
 		"log4js": "^0.6.36",
-		"otc-echo": "^1.0.6-SNAPSHOT.0"
+		"otc-echo": "^1.0.0"
 	},
 	"devDependencies": {
 		"grunt": "^1.0.1",
