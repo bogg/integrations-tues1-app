@@ -1,21 +1,24 @@
 {
-  "author": "Paul Webster <Paul_Webster@ca.ibm.com>",
-  "dependencies": {
-    "body-parser": "^1.15.1",
-    "cookie-parser": "^1.4.2",
-    "express": "^4.13.4",
-    "http": "0.0.0",
-    "log4js": "^0.6.36",
-    "otc-echo": "^1.0.6-SNAPSHOT.0"
-  },
-  "devDependencies": {},
-  "engines": {
-    "node": "4.6.x",
-    "npm": "3.10.x"
-  },
-  "name": "otc-simple-app",
-  "scripts": {
-    "start": "node index"
-  },
-  "version": "1.1.7-SNAPSHOT.0"
+	"author": "Paul Webster <Paul_Webster@ca.ibm.com>",
+	"dependencies": {
+		"body-parser": "^1.15.1",
+		"cookie-parser": "^1.4.2",
+		"express": "^4.13.4",
+		"http": "0.0.0",
+		"log4js": "^0.6.36",
+		"otc-echo": "^1.0.6-SNAPSHOT.0"
+	},
+	"devDependencies": {
+		"grunt": "^1.0.1",
+		"grunt-sonar-runner": "^2.4.8"
+	},
+	"engines": {
+		"node": "4.6.x",
+		"npm": "3.10.x"
+	},
+	"name": "otc-simple-app",
+	"scripts": {
+		"start": "node index"
+	},
+	"version": "1.0.0"
 }
