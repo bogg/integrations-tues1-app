@@ -11,14 +11,14 @@
 "use strict";
 
 
-var express = require("express"),
+const express = require("express"),
 	log4js = require("log4js"),
 	cookieParser = require("cookie-parser"),
 	bodyParser = require("body-parser"),
 	http = require('http'),
 	echoController = require('otc-echo');
  
- var PORT = 3000;
+ const PORT = 3000;
  if (process.env.PORT) {
  	PORT = process.env.PORT;
  }
@@ -29,10 +29,10 @@ log4js.configure("./config/log4js.json", {
     reloadSecs: 30
 });
 
-var logger = log4js.getLogger("otc-simple-app");
+const logger = log4js.getLogger("otc-simple-app");
 
 
-var app = express();
+const app = express();
 app.set('env', 'production');
 app
 	.use(cookieParser())
